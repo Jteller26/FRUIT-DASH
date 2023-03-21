@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18ac8661d66998f418650f416789ea4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cherrySound: {fileID: 8300000, guid: 243d4c3ede687cc439dbd6a2a1510cfe, type: 3}
+  - bananaSound: {fileID: 8300000, guid: 99eca9c819b23154386ceb85d77a6a9b, type: 3}
+  - watermelonSound: {fileID: 8300000, guid: b88664abb2fa6dd45a9acdccf3f6215d, type: 3}
+  - bombSound: {fileID: 8300000, guid: d87674e1402beb74f80b3916e42b057f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
