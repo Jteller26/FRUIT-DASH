@@ -1,0 +1,32 @@
+GAME452
+ASSIGNMENT 4
+
+Jeff Teller
+
+
+
+All shown in Timeline scene:
+
+- There is 3 virtyal cameras with 2 dolly shots
+
+- The player is in the shot and same with fruits spawning while the timeline goes
+
+- The player has a running animation during the timeline
+
+- Theres 4 activation tracks for UI text ("Get ready, 3, 2, 1")
+
+- Have animation tracks for the dolly cammeras and for them to move
+
+- Have sound effect for "get ready,3,2,1"
+
+- Have background sound music and thunder sound effect palying through the whole timeline
+
+- Have a signal to chnage the scene to maain game scene when the timeline is over
+
+- Have a partical effect that starts at "get ready"
+    reference- https://assetstore.unity.com/packages/vfx/particles/fire-explosions/procedural-fire-141496
+
+    
+    
+   
+

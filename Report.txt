@@ -1,0 +1,67 @@
+GAME452
+ASSIGNMENT 1
+
+Jeff Teller
+
+
+Description:
+The object of this game is to catch as much fruit as you can in 100 seconds. Watch out for the bombs and don't hit them. Try to get get the highest score.
+
+How to play:
+WSAD - movement
+Mouse - Look left and right 
+Space - Jump
+
+The 7 requirements we chose are:
+1.  Lambda expression
+    Used in BombDestroy.cs script [Line 12] in Private Action _explode declaration.
+
+2. MultiCast Delegate
+    Used in Score.cs script [Line 21], TextColor.cs script [Line 13], and used in CollectFood.cs [Line 9,10,20]
+    
+3. C# Event
+    Used in BombText.cs script [Line 12], and used in BombDestroy.cs [Line 9,10,25]
+
+4. Action 
+    Used in TotalFood.cs [all], TotalScore.cs [all], and used in CollectFood.cs [Line 9,10,24]
+    
+5. Contravariance
+    Used in AudioManager.cs [Play(Fruit f) method]. The method is called from the [Invoke method] of Cherry.cs,
+    Banana.cs, and Watermelon.cs. The 3 calling classes are all derived from the Fruit class and all pass [this]
+    in place of the expected Base class.
+    
+6. Pub/Sub pattern: used on  fruit observer/manager for scoring catches
+      Scripts: FruitManager.cs (publisher)
+               IFruitObserver.cs (subscriber interface)
+               Cherry.cs (implements IFruitObserver)
+               Banana.cs (implements IFruitObserver)
+               Watermelon.cs (implements IFruitObserver)
+    
+7.  Function
+    Used in MissedScore.cs [all]
+
+8. EventHandler
+    Used in ButtonScript [all]
+    
+References for outside resources:
+
+  Audio:
+    short 1.mp3
+      https://pixabay.com/sound-effects/button-124476/
+    sound 1.mp3
+      https://pixabay.com/sound-effects/collect-5930/
+    sound 2.mp3
+      https://pixabay.com/sound-effects/3-down-fast-1-106142/
+    sound 3.mp3
+      https://pixabay.com/sound-effects/3-down-1-89191/
+   Assets:
+    All Fruit
+      https://assetstore.unity.com/packages/3d/food-pack-3d-microgames-add-ons-163295
+    Player
+      https://assetstore.unity.com/packages/3d/characters/humanoids/character-pack-free-animal-people-sample-204568
+    Trees
+      https://assetstore.unity.com/packages/3d/vegetation/trees/free-trees-103208
+    Terrain
+      https://assetstore.unity.com/packages/3d/environments/landscapes/terrain-sample-asset-pack-145808
+   
+

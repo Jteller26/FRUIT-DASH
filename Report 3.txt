@@ -1,0 +1,68 @@
+GAME452
+ASSIGNMENT 3
+
+Jeff Teller
+
+
+
+The 8 requirements we chose are:
+
+1.  Surface Shader - Transparent shader
+        Used to make a clear marking of the out of bounds while playing the game
+        You can find the material by (Materials, Transparentoutofbounds)
+        You can find Shader by (Shaders, Transparent Shader)
+        You can find it in the hierarchy by (Terrain, Outofbounds shader)
+
+2.  Surface Shader - Shader with a vertex function
+        used to make a flame effect for the bombs
+        You can find the material by (Materials, bomb flame)
+        You can find Shader by (Shaders, bomb shader)
+        You can find it in the hierarchy by (BombSpawn, Inspector- Bomb Prefab)
+    
+3.  Surface Shader - Shader with a normal map
+        used to make the bomb texture look bumpy and not smooth
+        You can find the material by (Materials, Normal - bomb)
+        You can find Shader by (Shaders, Normal Map Shader)
+        You can find it in the hierarchy by ((BombSpawn, Inspector- Bomb Prefab)
+        
+
+4.  At least 3 Post Processing Effects with the Post Processing Stack
+        used to make the screen depth of field go in and out
+        used to change the screen color grading and auto exposure as well
+        You can find the Post-processing Profile in assets
+        You can find the Post-process layer in hierarchy-(Player, Main Camera)
+        You can find the Post-process volume in hierarchy-(processing)
+        You can find script in (Scripts, Vignettepost)
+    
+5.  Shader developed with Shader Graph
+        Used to make sky effect. Effects include shadow variation and lightning style effect.
+        Shader asset:   Shaders/SkyShader.shadergraph
+        Material asset: Materials/SkyMaterial.mat
+    
+6.  Vertex and Fragment Shader 
+        Used to make watermelon shift color when viewed at different angles. To see effect, run
+        around watermelon. It will shift from the default red to a more magenta look as you rotate
+        around it.
+        Shader asset:   Shaders/WatermelonShaderVF.shader
+        Material asset: Materials/WatermelonMaterial.mat
+        Prefab asset:   Prefabs/Watermelon.prefab
+    
+7.  Animated Shader
+        Used to make bananas "wiggle". The vertices are moved left and right to give an animated 
+        wiggle-like movement effect.
+        Shader asset:    Shaders/BananaAnimatedShader.shadergraph
+        Material assets: Materials/BananaShaderYellow.mat
+                         Materials/BananaShaderBrown.mat
+        Prefab asset:    Prefabs/Banana.prefab
+
+8.  Vertex and Fragment Shader with Grab Pass
+        Used to make a "dash" effect. When running forwards or backwards, the ground in line with 
+        the player is blurred using a grab pass. This effect is hidden when at a stand still or moving
+        sideways only.
+        Shader asset:   Shaders/RunBlurShader.shader
+        Material asset: Materials/RunBlurMaterial.mat
+        Prefab asset:   Prefabs/DashEffectQuad.prefab
+        Modified script CharacterMovement.cs to activate/deactivate the DashEffectQuad
+    
+   
+

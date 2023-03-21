@@ -1,0 +1,56 @@
+GAME452
+ASSIGNMENT 2
+
+Jeff Teller
+Kris Rangel
+
+The 7 requirements we chose are:
+1.  Gizmos 
+        Used in Gizmos Folder, 2 scripts and a png image, 
+        Used to mark playing boundry and a bomb icon where the bomb spawns above the player
+        Hierarchy - (Terrain,OuterBoundries,Gizmos) and (Player,BombSpawn,Gizmos) 
+        
+2.  Unity Attributes
+        Used in Playerlook.cs,CharacterMovment.cs, Timer.cs
+        Used to make the mouse sentitvity and player speed to have a range it could be 
+        Made Header for timer in the inspector
+        Used require component for chracater movement.cs to always have a chracter controller
+        Hierarchy - (Player) and (Player,Main Camera) and (Canvas, Timer)
+    
+3.  IMGUI Custom Inspector
+        All Used in BombSpawn(Interval IMGUI) Folder in scripts folder
+        Used to have buttons for the interval the bomb spawns during the game
+        Hierarchy - (Player, BombSpawn)
+
+4. IMGUI Property Drawer
+        All used in IMGUI Property Drawer Folder in scripts folder
+        Used to make a drop down property for the timer for the game
+        Hierarchy - (Canvas, Timer)
+    
+5. UI Toolkit Custom Inspector 
+        Used on AudioManager to show audio type groups. The script, AudioManagerEditor.cs provides
+        the custom inspector script to divide the audio sources and clips into related groups. The custom
+        inspector allows you to play the audio within the editor (non-runtime). The cleanup button allows
+        you to manually cleanup (delete) the EditorAudio object (if not cleaned up, it will be removed at
+        runtime).
+        Hierarchy - (AudioManager)
+
+6.  Scriptable Objects
+        Used in ScriptableAudioManager.cs scriptable object to hold default sound effect files. To allow
+        the restoration of default sounds during runtime when file sounds have been changed. A 
+        way this is useful for development is for comparison of new sounds to old sounds when looking
+        to replace sound effects (during runtime within the editor).
+        Asset -  (Assets/ScriptableAudioManager.asset)
+        
+
+7. UI Toolkit Custom Editor Window
+        Used in custom window at Window->ResetAudioClipsToDefault. This window lists the default
+        audio files and has a button to reset the audio clips to default. It works in conjunction
+        with the ScriptableAudioManager. The ResetAudioClipsToDefault.cs script gets the default
+        values from ScriptableAudioManager to display. Then when the button is pressed, it updates
+        the AudioManager with the references to the default values. 
+        Menu - (Window -> ResetAudioClipsToDefault)
+
+    
+   
+
